@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medusa_product_categories",
+  "info": {
+    "singularName": "medusa-product-category",
+    "pluralName": "medusa-product-categories",
+    "displayName": "MedusaProductCategory",
+    "description": "Product categories synced from Medusa.js"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "medusa_id": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "handle": {
+      "type": "string",
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "metadata": {
+      "type": "json"
+    }
+  }
+}

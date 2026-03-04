@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_main_sections",
+  "info": {
+    "singularName": "home-main-section",
+    "pluralName": "home-main-sections",
+    "displayName": "HomeMainSection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Navbar": {
+      "type": "component",
+      "component": "layout.navbar",
+      "repeatable": false
+    }
+  }
+}

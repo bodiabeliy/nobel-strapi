@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medusa_products",
+  "info": {
+    "singularName": "medusa-product",
+    "pluralName": "medusa-products",
+    "displayName": "MedusaProduct",
+    "description": "Products synced from Medusa.js e-commerce backend"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "medusa_id": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "handle": {
+      "type": "string",
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published",
+        "proposed",
+        "rejected"
+      ],
+      "default": "draft"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "images": {
+      "type": "json"
+    },
+    "variants": {
+      "type": "json"
+    },
+    "collection_title": {
+      "type": "string"
+    },
+    "collection_handle": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "json"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "price_amount": {
+      "type": "integer",
+      "default": 0
+    },
+    "price_currency": {
+      "type": "string",
+      "default": "usd"
+    },
+    "price_display": {
+      "type": "string"
+    }
+  }
+}

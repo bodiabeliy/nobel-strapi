@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_elements_links",
+  "info": {
+    "displayName": "Links"
+  },
+  "options": {},
+  "attributes": {
+    "LinkText": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "isAuth": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}
