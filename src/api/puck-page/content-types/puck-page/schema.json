@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "puck_pages",
+  "info": {
+    "singularName": "puck-page",
+    "pluralName": "puck-pages",
+    "displayName": "PuckPage",
+    "description": "Stores Puck editor page data per route path"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "path": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "data": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
